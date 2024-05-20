@@ -5,16 +5,22 @@ var health = 100
 #if whe export a variable we can changed it in the inspector.
 # @export var health = 100
 func _ready():
-	print("Hello world")
+	
+	#Arrays
+	var item: Array[String] = ["Potion", "Feather", "Stolen harp"]
+	#var character_height = randi_range(140,210)
+	#print("Your character is " + str(character_height) + " cm")
+	#print("Hello world")
 	
 	$Label.text = 'Hello World'
 	$Label.modulate = Color.GREEN
 
 func _input(event): 
 	if event.is_action_pressed("MY_ACTION"):
-		var result = add(1,2)
-		result = add(result, 4)
-		print(result)
+		random()
+		#var result = add(1,2)
+		#result = add(result, 4)
+		#print(result)
 	#if event.is_action_pressed("MY_ACTION"):
 	#	$Label.modulate = Color.RED
 	
@@ -27,3 +33,12 @@ func jump():
 func add(num1: int, num2: int) -> int:
 	var result = num1 + num2
 	return result
+
+
+#Random number
+func random():
+	var roll = randf()
+	if roll <= 0.8:
+		print("You found a Common item")
+	else:
+		print("You found a Rare Item")
