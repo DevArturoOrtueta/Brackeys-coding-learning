@@ -7,7 +7,31 @@ var health = 100
 func _ready():
 	
 	#Arrays
-	var item: Array[String] = ["Potion", "Feather", "Stolen harp"]
+	#var item: Array[String] = ["Potion", "Feather", "Stolen harp"]
+	
+	#item.remove_at(1)
+	#item.append("Overpowered sword")
+	
+	#Dictionaries
+	var players = {
+		"Crook": {
+			"Level": 1,
+			"Health": 80
+		},
+		"Villain": {
+			"Level": 34,
+			"Health": 100
+		},
+		"Boss": {
+			"Level": 100,
+			"Health": 120
+		}
+	}
+	
+	print(players.Crook.Level)
+	
+	#for username in players:
+	#	print(username + ": " + str(players[username]))
 	#var character_height = randi_range(140,210)
 	#print("Your character is " + str(character_height) + " cm")
 	#print("Hello world")
