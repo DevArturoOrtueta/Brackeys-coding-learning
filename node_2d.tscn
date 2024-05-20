@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_h0ht0"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("my_node")]
 script = ExtResource("1_h0ht0")
+my_node = NodePath("Label")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 8
@@ -21,3 +22,4 @@ size_flags_horizontal = 4
 text = "This is a label"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

@@ -1,11 +1,30 @@
 extends Node2D
 
+@onready var node_2d = get_node(".")
+@export var my_node : Node #Si pongo SpriteNode por ejemplo solo salen Sprite2D
+
+enum Alignment {ALLY, NEUTRAL, ENEMY}
+
+@export var my_alignment : Alignment
 var health = 100
 # Called when the node enters the scene tree for the first time.
 #if whe export a variable we can changed it in the inspector.
 # @export var health = 100
 func _ready():
 	
+	#match my_alignment:
+	#	Alignment.ALLY:
+	#		print("Hello, friend")
+	#	Alignment.NEUTRAL:
+	#		print("I come in piece")
+	#	Alignment.ENEMY:
+	#		print("TASTE MY WRATH")
+	#	_:
+	#		print("Who art thou")
+	#if unity_aligment == Alignment.ENEMY:
+	#	print("You are not welcome here.")
+	#else:
+	#	print("Welcome.")
 	#Arrays
 	#var item: Array[String] = ["Potion", "Feather", "Stolen harp"]
 	
@@ -28,7 +47,7 @@ func _ready():
 		}
 	}
 	
-	print(players.Crook.Level)
+	#print(players.Crook.Level)
 	
 	#for username in players:
 	#	print(username + ": " + str(players[username]))
