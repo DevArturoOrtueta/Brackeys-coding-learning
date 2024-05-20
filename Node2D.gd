@@ -1,7 +1,9 @@
 extends Node2D
 
-
+var health = 100
 # Called when the node enters the scene tree for the first time.
+#if whe export a variable we can changed it in the inspector.
+# @export var health = 100
 func _ready():
 	print("Hello world")
 	$Label.text = 'Hello World'
