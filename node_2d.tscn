@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://6a0c4rwyrdjg"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_h0ht0"]
-[ext_resource type="PackedScene" uid="uid://5x0px4mh1epo" path="res://signal.tscn" id="2_x5xmj"]
+[ext_resource type="PackedScene" uid="uid://cyutk3ap7angn" path="res://classes.tscn" id="2_d4cbq"]
 
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("my_node")]
 script = ExtResource("1_h0ht0")
@@ -25,5 +25,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Signal" parent="." instance=ExtResource("2_x5xmj")]
-position = Vector2(498, 294)
+[node name="Classes" parent="." instance=ExtResource("2_d4cbq")]
+position = Vector2(479, 198)
